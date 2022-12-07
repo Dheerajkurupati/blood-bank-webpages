@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>donate now</title>
+<style>
+    /*internal css is used to style webpage*/
+body{
+padding:10px;
+margin-left: 40px;
+}
+input[type="text"]:focus{
+background-color:rgb(159, 251, 251);
+}
+body{
+background-image: url("blood5.jpg");
+background-repeat:no-repeat;
+background-position: center;
+background-size: 100%;
+background-attachment: fixed;
+}
+form{
+color:rgb(149, 15, 193);
+}
+input[type="text"]{
+border-radius: 5px;
+}
+input[type="submit"],input[type="reset"]{
+background-color: blue;
+border-radius: 5px;
+padding:10px
+}
+input[type="submit"]:focus{
+background-color: orange;
+}
+input[type="reset"]:focus{
+background-color:red;
+}
+</style>
+</head>
+<body>
+    <!--post is used for sensitive information while browsing-->
+    <!--action attribute will be saw when we submit the page-->
+<form method="post" action="file:///C:/Users/dheerajkurupati/OneDrive/Desktop/HTML/project/donate2.html" autocomplete="off">
+<label for="fn">FIRST NAME:</label><br>
+<input type="text" name="firstname" value="" size="30" maxlength="30" id="fn" required><br><br>
+<label for="ln">LAST NAME:</label><br>
+<input type="text" name="lastname" value="" size="30" maxlength="30" id="ln" required><br><br>
+<label for="mail">E-MAIL:</label><br>
+<input type="text" name="email" value="" size="30" maxlength="30" id="mail" required><br><br>
+<label for="mn">MOBILE NUMBER:</label><br>
+<input type="text" name="mobile" value="" size="30" maxlength="10" id="mn" required><br><br>
+<p><h4>Choose Gender</h4></p>
+
+<input type="checkbox" name="male" value=""  id="male"  >
+<label for="male">MALE:</label><br>
+
+<input type="checkbox" name="female" value="" id="femal" >
+<label for="femal">FEMALE:</label><br>
+
+<input type="checkbox" name="others" value="" id="other" >
+<label for="other">OTHERS:</label><br>
+
+<label for="weight"><h4>WEIGHT:</h4></label>
+<input type="number" name="weight" value="" size="30" maxlength="6" id="weight" required><br>
+<p ><h3 >Choose Blood Group</h3></p>
+
+<input type="radio" name="bloodgroup" value="A+" id="a+">
+<label for="a+">A+</label><br>
+
+<input type="radio" name="bloodgroup" value="A-" id="a-">
+<label for="a-">A-</label><br>
+
+<input type="radio" name="bloodgroup" value="B+" id="b+">
+<label for="b+">B+</label><br>
+
+<input type="radio" name="bloodgroup" value="B -ve" id="b-">
+<label for="b-">B-</label><br>
+
+<input type="radio" name="bloodgroup" value="O +ve" id="o+">
+<label for="o+">O+</label><br>
+
+<input type="radio" name="bloodgroup" value="O -ve" id="o-">
+<label for="o-">O-</label><br>
+
+<input type="radio" name="bloodgroup" value="AB+" id="ab+">
+<label for="ab+">AB+</label><br>
+
+<input type="radio" name="bloodgroup" value="AB-" id="ab-">
+<label for="ab-">AB-</label><br>
+<p><h4>Address</h4></p>
+<input type="text" name="address" placeholder="state" required><br><br>
+<input type="text" name="address" placeholder="city" required ><br><br>
+<input type="text" name="address" placeholder="street"><br><br>
+<input type="value" name="address" placeholder="pincode" required><br><br>
+<P><h4>Have you Donated Previously ?</h4></P>
+
+<input type="radio" name="previously" value="yes" id="yes">
+<label for="yes">YES</label><br>
+<input type="radio" name="previously" value="yes" id="no">
+<label for="no">NO</label><br><br>
+<input type="submit" name="submit" value="Donate Now" >
+<input type="reset" name="reset" value="Reset">
+</form>
+</body>
+</html>
